@@ -1,45 +1,317 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-   <title>Strona główna</title> 
-    <meta charset="UTF-8">
 
-    <style>
-      * {
-        margin: 0;
-      }
-      .bg-green {
-        background-color: #6ab926;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        font-align:sans-serif;
-        font-size: 10px;
-      }
-      
-      #info {
-        position: fixed;
-        top:0;
-        left: 0;
-        z-index: 9;
-        width: 100%;
-      }
-      body {
-        min-height: 200vh;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div id="info" class="bg-green">eerdsererrtffdgdsrefdse</div>
-    </header>
-    <main>
-      
-    </main>
+	<head>
+		<title>Strona główna</title>
 
-    <footer>
-      
-    </footer>
-  </body>
+		<meta charset="UTF-8">
+		
+		<style>
+
+
+img {
+  vertical-align: middle;
+}
+
+
+.container {
+  position: relative;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+		table, th, td {
+  border: 1px solid;
+}
+
+		
+		
+			* {
+				margin: 0;
+			}
+		
+			.bg-green {
+				background-color: #6ab926;
+				color: #fff;
+				padding: 10px;
+				text-align: center;
+				font-family: sans-serif;
+				font-size: 10px;
+			}
+			
+			#info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100vw;
+    min-height: 25px;
+}
+			
+#nav {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding: 20px;
+	column-gap: 20px;
+	overflow-x: auto;
+}
+
+#nav > div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    column-gap: 20px;
+}
+			
+			body {
+				min-height: 200vh;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<header>
+			<div id="info" class="bg-green">Szopy pracze były znane rdzennym mieszkańcom Ameryki Północnej od tysiącleci</strong></div>
+			
+			<div id="nav">
+			  <div>
+			    <div>
+			      <a href="tel:500600700">+48000952</a>
+			    </div>
+			    <div>
+			      <a href="mailto:mail@example.com">Google@gmail.com</a>
+			    </div>
+			  </div>
+			  <div>
+			    <div>
+			      <a href="https://www.google.pl/" target="_blank">Google</a>
+			    </div>
+				<div>
+			      <a href="https://synergia.librus.pl/interfejs_lekcyjny" target="_blank">Librus</a>
+			    </div>
+			  </div>
+			</div>
+			
+			
+			<div id="main-slider">
+			  <h2 style="text-align:center">Slideshow szopów Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://cdn.pixabay.com/photo/2018/11/16/22/27/raccoon-3820327_1280.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://cdn.pixabay.com/photo/2021/06/30/08/28/raccoon-6376199_1280.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://cdn.pixabay.com/photo/2019/08/01/12/19/raccoon-4377383_1280.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://cdn.pixabay.com/photo/2022/01/22/17/37/animal-6957947_1280.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://cdn.pixabay.com/photo/2021/10/23/16/14/raccoon-6735306_1280.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.pixabay.com/photo/2023/09/28/17/36/raccoons-8282171_1280.jpg" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.pixabay.com/photo/2018/11/16/22/27/raccoon-3820327_1280.jpg" style="width:100%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.pixabay.com/photo/2021/06/30/08/28/raccoon-6376199_1280.jpg" style="width:100%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.pixabay.com/photo/2019/08/01/12/19/raccoon-4377383_1280.jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.pixabay.com/photo/2022/01/22/17/37/animal-6957947_1280.jpg" style="width:100%" onclick="currentSlide(5)" >
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.pixabay.com/photo/2021/10/23/16/14/raccoon-6735306_1280.jpg" style="width:100%" onclick="currentSlide(6)" >
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+			</div>
+		</header>
+		
+		<main>
+		  
+		  Na podstawie skamieniałości pochodzących z terenów Francji i Niemiec można założyć, że pierwsi przedstawiciele rodziny szopowatych zamieszkiwali Europę w późnym oligocenie, około 25 milionów lat temu[10]. Podobny kształt zębów i czaszek sugeruje istnienie bliskiego wspólnego przodka szopowatych i łasicowatych, lecz analiza DNA wskazuje na bliższe pokrewieństwo między szopami i niedźwiedziami[11]
+		<table>
+  <tr>
+    <th>Imie szopow </th>
+    <th>numer</th>
+  </tr>
+  <tr>
+    <td>Enot</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>2</td>
+    </tr>
+    <tr>
+     <td>Grinch</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Luka</td>
+    <td>4</td>
+    </tr>
+    <td>Lera</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Wik</td>
+    <td>6</td>
+    </tr>
+     <tr>
+     <td>Kris</td>
+    <td>7</td>
+ 
+    
+  </tr>
+</table>
+
+	
+		</main>
+		
+		<footer>
+		</footer>
+	
+	</body>
+
 </html>
-
